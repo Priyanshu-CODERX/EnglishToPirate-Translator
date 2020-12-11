@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Langar', cursive;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background: url("/images/bg.jpg") center center/cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-class{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+h4{
+    font-size: 30px;
+    margin: 10px;
+    color: #ffffff;
+}
+
+.head{
+    background-color: #212121;
+    color: white;
+    text-align: center;
+
+    padding: 20px;
+    /* margin: 3px; */
+    /* border-radius: 50px; */
+}
+
+.head h1{
+    font-size: 50px!important;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn, #btn2{
+    border-radius: 50px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 40px;
+    outline: none;
+    background-color: aliceblue;
+    box-shadow: -10px -10px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+#txt-inp{
+    width: 500px;
+    height: 200px;
+    padding: 1rem;
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 3px solid black;
+    outline: none;
+    font-size: 40px;
+}
+#output{
+    border-radius: 20px;
+    border: 3px solid black;
+    width: 500px;
+    height: 200px;
+    padding: 1rem;
+    font-size: 40px;
+    background-color: aliceblue;
+}
+
+.main-footer{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    background: #212121;
+    padding: 20px;
+}
