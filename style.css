@@ -5,7 +5,28 @@
     padding: 0;
     font-family: 'Langar', cursive;
 }
-
+/* width */
+::-webkit-scrollbar {
+    background-color: #212121;
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #212121; 
+    border-radius: 50px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; 
+  }
 body{
     width: 100%;
     height: auto;
@@ -69,8 +90,11 @@ h4{
     border: 3px solid black;
     outline: none;
     font-size: 40px;
+    resize: none;
 }
+
 #output{
+    overflow: auto;
     border-radius: 20px;
     border: 3px solid black;
     width: 500px;

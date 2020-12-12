@@ -5,15 +5,15 @@ var clear = document.querySelector("#btn2");
 
 const url = "https://api.funtranslations.com/translate/pirate.json";
 
-function getURL(textInp){
+
+const getURL = (textInp) => {
     return url + "?text=" + textInp;
 }
 
-function errorHandler(error) {
-    console.log(error);
-    alert("Got an error, please try again later");
+const errorHandler = (error) => {
+    output.innerText = "Error: " + error;
 }
-function textInpHandler() {
+const textInpHandler = () => {
     var userInp = text.value;
 
     fetch(getURL(userInp)).then(response => response.json()).then(json => {
@@ -23,7 +23,7 @@ function textInpHandler() {
 
 }
 
-function clearOutput(){
+const clearOutput = () => {
     output.innerText = "";
 }
 
