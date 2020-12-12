@@ -5,7 +5,6 @@ var clear = document.querySelector("#btn2");
 
 const url = "https://api.funtranslations.com/translate/pirate.json";
 
-
 const getURL = (textInp) => {
     return url + "?text=" + textInp;
 }
@@ -13,6 +12,7 @@ const getURL = (textInp) => {
 const errorHandler = (error) => {
     output.innerText = "Error: " + error;
 }
+
 const textInpHandler = () => {
     var userInp = text.value;
 
